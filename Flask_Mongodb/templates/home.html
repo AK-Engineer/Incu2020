@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Homepage</title>
+    <style>
+a:link, a:visited {
+  background-color: black;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+a:hover, a:active {
+  background-color: blue;
+}
+
+    </style>
+</head>
+<body>
+<h1>Welcome to Flask Exercise!</h1>
+<h2>1.To view information for the switches as HTML page click the button below:</h2>
+<a href="./bru-dna-1:/interfaces.html" target="_blank">Switch Info:bru-dna-1-HTML</a>
+<a href="./mastodon:/interfaces.html" target="_blank">Switch Info:mastodon-HTML</a>
+
+<h2>2.To view information for the switches in JSON format click the button below:</h2>
+<a href="./bru-dna-1:/interfaces.json" target="_blank">Switch Info:bru-dna-1-JSON</a>
+<a href="./mastodon:/interfaces.json" target="_blank">Switch Info:mastodon-JSON</a>
+
+<h2>3.To view information for specific interface as HTML page click the button below:</h2>
+<a href="./bru-dna-1:/int g1/0/details.html" target="_blank">Switch:bru-dna-1 Interface:int g1/0</a>
+<p>P.S: interfaces: int g1/0 | int fc1/1/0 change in url</p>
+<a href="./mastodon:/int GigabitEthernet1/0/3/details.html" target="_blank">Switch: mastodon Interface:int GigabitEthernet1/0/3</a>
+<p>P.S: interfaces: int GigabitEthernet1/0/3 | int GigabitEthernet1/0/5 | int GigabitEthernet1/4/3 change in url</p>
+
+<h2>4.To view information for specific interface in JSON format click the button below:</h2>
+<a href="./bru-dna-1:/int g1/0/details.json" target="_blank">Switch:bru-dna-1 Interface:int g1/0</a>
+<p>P.S: interfaces: int g1/0 | int fc1/1/0 change in url</p>
+<a href="./mastodon:/int GigabitEthernet1/0/3/details.json" target="_blank">Switch: mastodon Interface:int GigabitEthernet1/0/3</a>
+<p>P.S: interfaces: int GigabitEthernet1/0/3 | int GigabitEthernet1/0/5 | int GigabitEthernet1/4/3 change in url</p>
+
+<h2>5+6.PATCH request to update State or Description</h2>
+<p>For this part of the exercise I used the "Advanced REST client to make the PATCH requests"</p>
+<p>Example payload: {"State":"DOWN"}. TargetURL:http://127.0.0.1:5000/bru-dna-1:/int%20g1/0</p>
+
+</body>
+</html>
+

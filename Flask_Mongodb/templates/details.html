@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Details</title>
+</head>
+<body>
+<h1>Switch Name: <span style=color:blue;">{{ switch }}</span></h1>
+<h2>Information for interface: <span style=color:blue;>{{ intf }}</span></h2>
+
+{% for item in result['Interface_name'] %}
+    {% if item == intf %}
+    <h3>Description: <span style=color:blue;>{{ result['Description'][loop.index0] }}</span></h3>
+    <h3>State: <span style=color:blue;> {{ result['State'][loop.index0] }}</span></h3>
+    {% endif %}
+{% endfor %}
+
+
+</body>
+</html>
+
+
+<!--{% for item in list1 %}-->
+
+<!--    {{ item }}-->
+<!--    {{ list2[loop.index0] }}-->
+<!--    {{ list3[loop.index0] }}-->
+
+<!--{% endfor %}-->

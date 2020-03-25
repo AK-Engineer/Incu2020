@@ -1,0 +1,10 @@
+bru-dna-1:
+   int g1/0, “Connected to the switch2 gi1/2”, up
+   int fc1/1/0, “connected to the storage port 1”, up
+
+mastodon:
+   int GigabitEthernet1/0/3, “Connected to printer CX2”, up
+   int GigabitEthernet1/0/5, “Connected to printer CX4”, down
+   int GigabitEthernet1/4/3, “Connected to server SERV1”, up
+
+
